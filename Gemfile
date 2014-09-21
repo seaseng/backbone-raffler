@@ -39,4 +39,10 @@ gem 'backbone-on-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development do
+  gem 'pry'
+  gem 'pry-byebug'
+end
+
+
 
