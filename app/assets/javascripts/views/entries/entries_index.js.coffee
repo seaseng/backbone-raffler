@@ -18,7 +18,9 @@ class Raffler.Views.EntriesIndex extends Backbone.View
   appendEntry: (entry) =>
     view = new Raffler.Views.Entry(model: entry)
     # why the @ needed???
-    @$('#entries').append(view.render().el)
+    # because the #entries does not exist in the DOM yet
+    # but it is defined within the Backbone Index View Template
+    this.$('#entries').append(view.render().el)
 
   createEntry: (event) ->
     event.preventDefault()
