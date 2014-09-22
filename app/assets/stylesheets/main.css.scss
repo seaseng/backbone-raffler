@@ -31,7 +31,8 @@ form input {
   font-size: 20px;
 }
 form input[type='text'] {
-  width: 535px;
+  width: 500px;
+  vertical-align: middle;
 }
 form input[type='submit'], #draw {
   -webkit-appearance: caret;
@@ -51,11 +52,12 @@ form input[type='submit'], #draw {
   text-decoration: none;
   text-shadow: 0 -1px 0 #036;
   text-align: middle;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 #draw {
   margin: 20px auto;
+
 }
 
 h1 {
@@ -77,7 +79,6 @@ li {
   padding: 10px 10px;
   font-size: 16px;
   position: relative;
-  text-align: left;
   .winner {
     position: absolute;
     right: 10px;
